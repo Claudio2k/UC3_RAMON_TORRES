@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv1_registro"
+        android:textColor="@color/darkblue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/tv2frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv2_frase"
+        android:textColor="@color/darkblue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv1registro" />
+
+    <TextView
+        android:id="@+id/tv3nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv3_nombre"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv2frase" />
+
+    <TextView
+        android:id="@+id/tv4apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv4_apellidos"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3nombre" />
+
+    <TextView
+        android:id="@+id/tv5correo"
+        android:layout_width="79dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv5_correo"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv4apellidos" />
+
+    <TextView
+        android:id="@+id/tv6contraseña"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv6_contraseña"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv5correo" />
+
+    <TextView
+        android:id="@+id/tv7sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv7_sexo"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv6contraseña" />
+
+    <TextView
+        android:id="@+id/tv8nacimiento"
+        android:layout_width="75dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv8_nacimiento"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv7sexo" />
+
+    <Button
+        android:id="@+id/BtnRegistrate"
+        android:layout_width="137dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/limegreen"
+        android:drawableRight="@drawable/baseline_account_circle_24"
+        android:text="@string/Btn_Registrate"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv9pregunta" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tus nombres"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3nombre"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/tv3nombre"
+        app:layout_constraintTop_toTopOf="@+id/tv3nombre" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tus apellidos"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4apellidos"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombre"
+        app:layout_constraintTop_toTopOf="@+id/tv4apellidos" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5correo"
+        app:layout_constraintStart_toStartOf="@+id/editTextApellido"
+        app:layout_constraintTop_toTopOf="@+id/tv5correo" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6contraseña"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toTopOf="@+id/tv6contraseña" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Año/Mes/Día"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8nacimiento"
+        app:layout_constraintStart_toStartOf="@+id/editTextSexo"
+        app:layout_constraintTop_toTopOf="@+id/tv8nacimiento" />
+
+    <EditText
+        android:id="@+id/editTextSexo"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Masculino/Femenino/Otro"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7sexo"
+        app:layout_constraintStart_toStartOf="@+id/editTextContraseña"
+        app:layout_constraintTop_toTopOf="@+id/tv7sexo" />
+
+    <TextView
+        android:id="@+id/tv9pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv9_pregunta"
+        android:textColor="@color/darkcyan"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextFecha"
+        app:layout_constraintStart_toStartOf="@+id/editTextFecha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFecha" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="90dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="90dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/facebook"
+            tools:layout_editor_absoluteX="39dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/facebook"
+            tools:layout_editor_absoluteX="46dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3nombre"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
+        app:layout_constraintStart_toEndOf="@+id/tv3nombre"
+        app:layout_constraintTop_toTopOf="@+id/tv3nombre"
+        app:srcCompat="@drawable/nombre" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4apellidos"
+        app:layout_constraintEnd_toStartOf="@+id/editTextApellido"
+        app:layout_constraintStart_toEndOf="@+id/tv4apellidos"
+        app:layout_constraintTop_toTopOf="@+id/tv4apellidos"
+        app:srcCompat="@drawable/apellido" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5correo"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEmail"
+        app:layout_constraintStart_toEndOf="@+id/tv5correo"
+        app:layout_constraintTop_toTopOf="@+id/tv5correo"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6contraseña"
+        app:layout_constraintEnd_toStartOf="@+id/editTextContraseña"
+        app:layout_constraintStart_toEndOf="@+id/tv6contraseña"
+        app:layout_constraintTop_toTopOf="@+id/tv6contraseña"
+        app:srcCompat="@drawable/contrase_a" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7sexo"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSexo"
+        app:layout_constraintStart_toEndOf="@+id/tv7sexo"
+        app:layout_constraintTop_toTopOf="@+id/tv7sexo"
+        app:srcCompat="@drawable/sexo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8nacimiento"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFecha"
+        app:layout_constraintStart_toEndOf="@+id/tv8nacimiento"
+        app:layout_constraintTop_toTopOf="@+id/tv8nacimiento"
+        app:srcCompat="@drawable/calendario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

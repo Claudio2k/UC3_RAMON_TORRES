@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DAM_UC3_CLAUDIORAMON</string>
+    <string name="tv1_registro">Regístrate</string>
+    <string name="tv2_frase">Es gratis (y lo seguirá siendo)</string>
+    <string name="tv3_nombre">Nombre:</string>
+    <string name="tv4_apellidos">Apellidos:</string>
+    <string name="tv5_correo">Tu dirección de correo electrónico:</string>
+    <string name="tv6_contraseña">Contraseña nueva:</string>
+    <string name="tv7_sexo">Sexo:</string>
+    <string name="tv8_nacimiento">Fecha de nacimiento:</string>
+    <string name="tv9_pregunta">¿Por qué tengo que dar esta información?</string>
+    <string name="Btn_Registrate">Regístrate</string>
+    <string name="edittext_correo">Correo electrónico</string>
+    <string name="edittext_contraseña">Contraseña</string>
+</resources>
